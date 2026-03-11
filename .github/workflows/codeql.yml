@@ -1,4 +1,6 @@
 strategy:
+  with:
+    languages: ${{ matrix.language }}
   fail-fast: false
   matrix:
     language: [ 'go', 'java-kotlin', 'javascript-typescript', 'python' ]
